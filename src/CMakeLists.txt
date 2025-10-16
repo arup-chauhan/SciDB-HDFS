@@ -57,6 +57,7 @@ if (NOT WITHOUT_SERVER)
              ${BLAS_LIBRARIES}
              ${LAPACK_LIBRARIES}
              ccm_lib
+             ${ROCKSDB_LIB}
       )
 
     scidb_install(TARGETS scidb

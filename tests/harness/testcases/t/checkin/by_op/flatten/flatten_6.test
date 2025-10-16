@@ -1,2 +1,0 @@
---test
---shell --command "${TESTDIR}/flatten_6.py"

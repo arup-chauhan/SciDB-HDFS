@@ -1,2 +1,0 @@
---test
---shell --command "${TESTDIR}/py_schema_parser_3.py"

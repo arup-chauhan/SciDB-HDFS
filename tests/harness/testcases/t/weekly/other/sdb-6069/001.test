@@ -1,7 +1,0 @@
---setup
-
---test
---shell --command "${TESTDIR}/001.sh"
-
---cleanup
---shell --command "${TESTDIR}/001-cleanup.sh"

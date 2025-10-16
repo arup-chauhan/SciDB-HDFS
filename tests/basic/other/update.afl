@@ -1,1 +1,0 @@
-store(merge(input(dense, '../tests/basic/data/dense2.txt'), dense), dense2)

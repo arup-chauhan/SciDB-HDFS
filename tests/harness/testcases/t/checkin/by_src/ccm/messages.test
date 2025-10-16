@@ -1,4 +1,0 @@
---setup
---start-query-logging
---stop-query-logging
---shell --store --command "${TESTDIR}/runtests.sh"

@@ -1,1 +1,0 @@
-window(overlap, 3, 3, avg(a),count(a))

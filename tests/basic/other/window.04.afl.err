@@ -1,3 +1,0 @@
-Error query id: 1639275444
-Error message: Window size should be positive: (ssize_t)window[i] > 0
-Error code:16 ( Operands do not match )

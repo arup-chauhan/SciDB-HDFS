@@ -1,6 +1,0 @@
---setup
-load_library('misc')
-
---test
-test_storage_engine()
-

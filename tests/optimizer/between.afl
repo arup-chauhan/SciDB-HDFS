@@ -1,3 +1,0 @@
-sum(
-    between (opt_dense_quad_small_1, 99,99,100,100) 
-)

@@ -1,6 +1,0 @@
-Query was executed successfully
-
-SCIDB QUERY : <test_builtin_aggregates()>
-{i} val_approxdc
-{0} 0
-

@@ -1,1 +1,0 @@
-filter(dense, a > 50)

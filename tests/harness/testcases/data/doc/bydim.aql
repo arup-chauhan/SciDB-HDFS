@@ -1,3 +1,0 @@
-select max(a) from A group by x;
-
-select max(a) from A group by y;

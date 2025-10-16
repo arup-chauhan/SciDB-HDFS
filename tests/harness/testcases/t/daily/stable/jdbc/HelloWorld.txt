@@ -1,2 +1,0 @@
-{i} v
-{0} 'hello world'

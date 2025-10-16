@@ -1,1 +1,0 @@
-count(filter(list('instances'), instance_id=0 and regex(online_since,'201(.*)')));

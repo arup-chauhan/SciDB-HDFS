@@ -1,1 +1,0 @@
-window(win, 3, 3, sum(x),count(x))

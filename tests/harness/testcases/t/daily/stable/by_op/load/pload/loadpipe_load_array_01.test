@@ -1,4 +1,0 @@
---setup
---test
---shell --store-all --command="PYTHONPATH=${SCIDB_INSTALL_PATH}/bin ${TESTDIR}/loadpipe_load_array_01.sh"
---cleanup

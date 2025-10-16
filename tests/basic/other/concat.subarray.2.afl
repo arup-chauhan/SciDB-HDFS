@@ -1,1 +1,0 @@
-sum(concat(subarray(dense,0,0,3,5), subarray(dense,4,0,5,5)))

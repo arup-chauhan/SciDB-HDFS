@@ -1,2 +1,0 @@
-SCIDB QUERY : <diff /tmp/tload3_${HPID}.tsv /tmp/tload3_${HPID}_2.tsv || true>
-

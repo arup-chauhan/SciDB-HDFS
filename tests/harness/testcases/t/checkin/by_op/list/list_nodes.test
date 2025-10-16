@@ -1,2 +1,0 @@
---test
-aggregate(filter(list('instances'), instance_id=0),count(*))

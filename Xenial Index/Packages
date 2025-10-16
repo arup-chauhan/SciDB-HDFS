@@ -1,0 +1,1430 @@
+Package: librocksdb-dev
+Source: rocksdb
+Version: 5.7.2~scidb~xenial-1
+Architecture: amd64
+Maintainer: SciDB Support List <support@lists.scidb.org>
+Installed-Size: 18881
+Depends: librocksdb5 (= 5.7.2~scidb~xenial-1)
+Filename: community/19.11/xenial/librocksdb-dev_5.7.2~scidb~xenial-1_amd64.deb
+Size: 2034032
+MD5sum: 2e817f45c4347679d4ac413a19f6b9ee
+SHA1: 56a4da1983dc4bd420ca40a6c86b5eda2631e169
+SHA256: b89e17bebdbc2065f25c770a75240c04c1201e2125317b91f696bd436b6a792f
+Section: libdevel
+Priority: optional
+Homepage: http://rocksdb.org/
+Description: persistent Key-Value Store for Flash and RAM Storage (development)
+ C++ library providing an embedded key-value store, where keys and values are
+ arbitrary byte streams. It was developed at Facebook based on LevelDB and
+ provides backwards-compatible support for LevelDB APIs.
+ .
+ RocksDB is optimized for Flash with extremely low latencies. RocksDB uses a
+ Log Structured Database Engine for storage, written entirely in C++.
+ .
+ RocksDB features highly flexible configuration settings that may be tuned to
+ run on a variety of production environments, including pure memory, Flash,
+ hard disks or HDFS. It supports various compression algorithms and good tools
+ for production support and debugging.
+ .
+ Features:
+   - Designed for application servers wanting to store up to a few terabytes
+     of data on locally attached Flash drives or in RAM
+   - Optimized for storing small to medium size key-values on fast storage --
+     flash devices or in-memory
+   - Scales linearly with number of CPUs so that it works well on ARM
+     processors
+ .
+ This package contains libraries and header files for developing
+ applications that use librocksdb .
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+
+Package: librocksdb5
+Source: rocksdb
+Version: 5.7.2~scidb~xenial-1
+Architecture: amd64
+Maintainer: SciDB Support List <support@lists.scidb.org>
+Installed-Size: 5535
+Depends: libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libgflags2v5, libnuma1, libsnappy1v5, libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Conflicts: librocksdb4.5
+Replaces: librocksdb4.5
+Filename: community/19.11/xenial/librocksdb5_5.7.2~scidb~xenial-1_amd64.deb
+Size: 1427104
+MD5sum: deb8168d224b4ebd82496ab6bf4fe25a
+SHA1: 934df07df7bc1713f2e18d5c16121a9394384335
+SHA256: f3e4226128aa5efcc403c47b2b78220e5f2567021fd37ba082e6f8bec6f975ca
+Section: database
+Priority: optional
+Homepage: http://rocksdb.org/
+Description: persistent Key-Value Store for Flash and RAM Storage
+ C++ library providing an embedded key-value store, where keys and values are
+ arbitrary byte streams. It was developed at Facebook based on LevelDB and
+ provides backwards-compatible support for LevelDB APIs.
+ .
+ RocksDB is optimized for Flash with extremely low latencies. RocksDB uses a
+ Log Structured Database Engine for storage, written entirely in C++.
+ .
+ RocksDB features highly flexible configuration settings that may be tuned to
+ run on a variety of production environments, including pure memory, Flash,
+ hard disks or HDFS. It supports various compression algorithms and good tools
+ for production support and debugging.
+ .
+ Features:
+   - Designed for application servers wanting to store up to a few terabytes
+     of data on locally attached Flash drives or in RAM
+   - Optimized for storing small to medium size key-values on fast storage --
+     flash devices or in-memory
+   - Scales linearly with number of CPUs so that it works well on ARM
+     processors
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+
+Package: librocksdb5-dbg
+Source: rocksdb
+Version: 5.7.2~scidb~xenial-1
+Architecture: amd64
+Maintainer: SciDB Support List <support@lists.scidb.org>
+Installed-Size: 33575
+Depends: librocksdb5 (= 5.7.2~scidb~xenial-1)
+Conflicts: librocksdb4.5-dbg
+Replaces: librocksdb4.5-dbg
+Filename: community/19.11/xenial/librocksdb5-dbg_5.7.2~scidb~xenial-1_amd64.deb
+Size: 33090706
+MD5sum: 4ab7613016e64f538d4dbfc2172241d0
+SHA1: 49f120c23f1caf73f4a91a601f6638e08be6af21
+SHA256: d61e5fff3cc99999dbee199e5f3da803e5880d7f05bf11de0a01e6bc2511554e
+Section: debug
+Priority: extra
+Homepage: http://rocksdb.org/
+Description: persistent Key-Value Store for Flash and RAM Storage (debug-symbols)
+ C++ library providing an embedded key-value store, where keys and values are
+ arbitrary byte streams. It was developed at Facebook based on LevelDB and
+ provides backwards-compatible support for LevelDB APIs.
+ .
+ RocksDB is optimized for Flash with extremely low latencies. RocksDB uses a
+ Log Structured Database Engine for storage, written entirely in C++.
+ .
+ RocksDB features highly flexible configuration settings that may be tuned to
+ run on a variety of production environments, including pure memory, Flash,
+ hard disks or HDFS. It supports various compression algorithms and good tools
+ for production support and debugging.
+ .
+ Features:
+   - Designed for application servers wanting to store up to a few terabytes
+     of data on locally attached Flash drives or in RAM
+   - Optimized for storing small to medium size key-values on fast storage --
+     flash devices or in-memory
+   - Scales linearly with number of CPUs so that it works well on ARM
+     processors
+ .
+ This package contains debug symbols for the librocksdb5 library.
+Build-Ids: 5947e57bff2050bc021766a0b733533496128c93
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+
+Package: libscalapack-mpi-dev
+Source: scalapack
+Version: 2.0.2-4~scidb~xenial+1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 14
+Depends: libscalapack-openmpi-dev, mpi-default-dev
+Suggests: scalapack-doc
+Replaces: libblacs-mpi-dev
+Provides: libblacs-mpi-dev
+Filename: community/19.11/xenial/libscalapack-mpi-dev_2.0.2-4~scidb~xenial+1_amd64.deb
+Size: 8210
+MD5sum: b48db05d1df09b3b5af4be196a43c1e3
+SHA1: 1ca03bfc79dcf592b20565f4a3e883bc64ae1be1
+SHA256: 7a3500beadb524ad48e1b2ac0e5119d50aa5b157a177f354d9bcde511ff2963c
+Section: libdevel
+Priority: optional
+Homepage: http://www.netlib.org/scalapack/
+Description: Scalable Linear Algebra Package - Dev files for MPI
+ ScaLAPACK is the parallel version of LAPACK used on clusters.
+ .
+ There are packages for the shared libraries, for the static libraries and
+ the development files (this one) and for test programs.
+ .
+ Also included:
+    - PBLAS, Parallel Basic Linear Algebra Subprograms
+    - BLACS, Basic Linear Algebra Communication Subprograms
+ .
+ This is a dummy package which depends on the scalapack development package
+ supporting the default implementation of MPI on this architecture.
+
+Package: libscalapack-mpich-dev
+Source: scalapack
+Version: 2.0.2-4~scidb~xenial+1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 32
+Depends: libscalapack-mpich2.0 (= 2.0.2-4~scidb~xenial+1)
+Suggests: scalapack-doc
+Breaks: libscalapack-mpi-dev (<< 2.0.2-1)
+Replaces: libblacs-mpi-dev
+Provides: libblacs-mpi-dev
+Filename: community/19.11/xenial/libscalapack-mpich-dev_2.0.2-4~scidb~xenial+1_amd64.deb
+Size: 12236
+MD5sum: b5ae66bebfc97a83dabe39e3930fe0a3
+SHA1: ee134269959d05a617a621e2fa5d04debe6cbe67
+SHA256: e0abb9ce51e84f989404a13e701f4313cb60f69d4cf6d9f3b92c2cca8ccef556
+Section: libdevel
+Priority: optional
+Homepage: http://www.netlib.org/scalapack/
+Description: Scalable Linear Algebra Package - Dev files for MPICH
+ ScaLAPACK is the parallel version of LAPACK used on clusters.
+ .
+ There are packages for the shared libraries, for the static libraries and
+ the development files (this one) and for test programs.
+ .
+ Also included:
+    - PBLAS, Parallel Basic Linear Algebra Subprograms
+    - BLACS, Basic Linear Algebra Communication Subprograms
+ Also included: PBLAS, Parallel Basic Linear Algebra Subprograms.
+ .
+ This package supports the MPICH implementation of MPI.
+
+Package: libscalapack-mpich2.0
+Source: scalapack
+Version: 2.0.2-4~scidb~xenial+1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 5639
+Depends: mpi-default-bin, libblas3 | libblas.so.3, libc6 (>= 2.14), libgcc1 (>= 1:4.0), libgfortran3 (>= 4.6), liblapack3 | liblapack.so.3, libmpich12
+Suggests: scalapack-doc
+Conflicts: scalapack2-mpich
+Breaks: libscalapack-mpi1 (<< 1.8.0-9.1)
+Replaces: libscalapack-mpi1 (<< 1.8.0-9.1), scalapack1-mpich
+Filename: community/19.11/xenial/libscalapack-mpich2.0_2.0.2-4~scidb~xenial+1_amd64.deb
+Size: 1484544
+MD5sum: b0975d6b2638456972bc863b89b0d68d
+SHA1: 4986bb0bdb6e82ac54f45cf4ab6536417d2d5e61
+SHA256: 089fec508f89500e7c62f55a039853e17f78884b6ac72c122ebc836b0a0df122
+Section: libs
+Priority: optional
+Homepage: http://www.netlib.org/scalapack/
+Description: Scalable Linear Algebra Package - Shared libs for MPICH
+ ScaLAPACK is the parallel version of LAPACK used on clusters.
+ .
+ There are packages for the shared libraries (this one), for the
+ static libraries and the development files and for test programs.
+ .
+ Also included:
+   - PBLAS, Parallel Basic Linear Algebra Subprograms
+   - BLACS, Basic Linear Algebra Communication Subprograms
+ .
+ This package supports the MPICH implementation of MPI.
+
+Package: libscalapack-openmpi-dev
+Source: scalapack
+Version: 2.0.2-4~scidb~xenial+1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 32
+Depends: libscalapack-openmpi2.0 (= 2.0.2-4~scidb~xenial+1)
+Suggests: scalapack-doc
+Breaks: libscalapack-mpi-dev (<< 2.0.2-1)
+Replaces: libblacs-mpi-dev
+Provides: libblacs-mpi-dev
+Filename: community/19.11/xenial/libscalapack-openmpi-dev_2.0.2-4~scidb~xenial+1_amd64.deb
+Size: 12230
+MD5sum: cc87946aa8e2e47f330b88cfcc53ffda
+SHA1: 188664b3795c2720a001bab132615f7b7016830c
+SHA256: 2f14cfe3f293410d73fd351ec76144c4f8674220e01d64f531d9c034d5add9c3
+Section: libdevel
+Priority: optional
+Homepage: http://www.netlib.org/scalapack/
+Description: Scalable Linear Algebra Package - Dev files for OpenMPI
+ ScaLAPACK is the parallel version of LAPACK used on clusters.
+ .
+ There are packages for the shared libraries, for the static libraries and
+ the development files (this one) and for test programs.
+ .
+ Also included:
+    - PBLAS, Parallel Basic Linear Algebra Subprograms
+    - BLACS, Basic Linear Algebra Communication Subprograms
+ .
+ This package supports the OpenMPI implementation of MPI.
+
+Package: libscalapack-openmpi2.0
+Source: scalapack
+Version: 2.0.2-4~scidb~xenial+1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 5700
+Depends: mpi-default-bin, libblas3 | libblas.so.3, libc6 (>= 2.14), libgcc1 (>= 1:4.0), libgfortran3 (>= 4.6), liblapack3 | liblapack.so.3, libopenmpi1.10
+Suggests: scalapack-doc
+Conflicts: scalapack2-mpich
+Breaks: libscalapack-mpi1 (<< 1.8.0-9.1)
+Replaces: libscalapack-mpi1 (<< 1.8.0-9.1), scalapack1-mpich
+Filename: community/19.11/xenial/libscalapack-openmpi2.0_2.0.2-4~scidb~xenial+1_amd64.deb
+Size: 1489218
+MD5sum: 55cd3415a876b6ecc95697314ac88753
+SHA1: 3f82e5458b286748347a66891a15745f98223de7
+SHA256: 3e930d6cf3b6638681f66078117c506550216f01f0b990ede88e87b777438099
+Section: libs
+Priority: optional
+Homepage: http://www.netlib.org/scalapack/
+Description: Scalable Linear Algebra Package - Shared libs for OpenMPI
+ ScaLAPACK is the parallel version of LAPACK used on clusters.
+ .
+ There are packages for the shared libraries (this one), for the
+ static libraries and the development files and for test programs.
+ .
+ Also included:
+   - PBLAS, Parallel Basic Linear Algebra Subprograms
+   - BLACS, Basic Linear Algebra Communication Subprograms
+ .
+ This package supports the OpenMPI implementation of MPI.
+
+Package: scalapack-mpi-test
+Source: scalapack
+Version: 2.0.2-4~scidb~xenial+1
+Architecture: amd64
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 18588
+Depends: scalapack-test-common, libblas3 | libblas.so.3, libc6 (>= 2.14), libgcc1 (>= 1:4.0), libgfortran3 (>= 4.6), liblapack3 | liblapack.so.3, libmpich12, libopenmpi1.10, libscalapack-mpich2.0, libscalapack-openmpi2.0
+Recommends: cmake
+Suggests: scalapack-doc
+Conflicts: scalapack-mpich-test
+Replaces: blacs-mpi-test, scalapack-mpich-test
+Provides: blacs-mpi-test, scalapack-mpich-test
+Filename: community/19.11/xenial/scalapack-mpi-test_2.0.2-4~scidb~xenial+1_amd64.deb
+Size: 1744518
+MD5sum: 53b54655f815269517366d1d864021a1
+SHA1: a45a121e87bd16fa20794a435ae05bc8bdcbc610
+SHA256: b9341f2382e42caa84685c488ad6ec284d666aa2d2418ce3c44cc88379e3d556
+Section: math
+Priority: optional
+Homepage: http://www.netlib.org/scalapack/
+Description: Scalable Linear Algebra Package - Test files for MPI
+ ScaLAPACK is the parallel version of LAPACK used on clusters.
+ .
+ Also included:
+    - PBLAS, Parallel Basic Linear Algebra Subprograms
+    - BLACS, Basic Linear Algebra Communication Subprograms
+ .
+ This package contains ScaLAPACK, PBLAS and BLACS test programs.
+
+Package: scalapack-test-common
+Source: scalapack
+Version: 2.0.2-4~scidb~xenial+1
+Architecture: all
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 117
+Suggests: scalapack-mpi-test
+Replaces: blacs-test-common
+Provides: blacs-test-common
+Filename: community/19.11/xenial/scalapack-test-common_2.0.2-4~scidb~xenial+1_all.deb
+Size: 14318
+MD5sum: 79431abaa3ff1ca09099a6c348022b4f
+SHA1: c92ed803d154dd474d3cdcbc1e007bc8015f0d63
+SHA256: 1e5e9699a27b6463017ef8ae41f42c6158ce854f515fe5f62baf7e7b1e96cced
+Section: devel
+Priority: optional
+Homepage: http://www.netlib.org/scalapack/
+Description: Test data for ScaLAPACK testers
+ ScaLAPACK is the parallel version of LAPACK used on clusters.
+ .
+ Also included:
+    - PBLAS, Parallel Basic Linear Algebra Subprograms
+    - BLACS, Basic Linear Algebra Communication Subprograms
+ .
+ This package contains data files used by test programs.
+
+Package: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 57492
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), python-crypto, intel-mkl-64bit
+Recommends: postgresql-client
+Suggests: postgresql, postgresql-contrib
+Filename: community/19.11/xenial/scidb-19.11_0-1_amd64.deb
+Size: 8741532
+MD5sum: 83e8e5d73eeb2cfb59354417b32869ac
+SHA1: 63d7329c43f50c88bb20343413c4d72386d8a770
+SHA256: 3eea30bc6bb4c2ceaa5f5411ffc25ecc37fc8b903deedf5fc752e94d676867f3
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing
+    87e7d51
+
+Package: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 57556
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), python-crypto, intel-mkl-64bit
+Recommends: postgresql-client
+Suggests: postgresql, postgresql-contrib
+Filename: community/19.11/xenial/scidb-19.11_3-1_amd64.deb
+Size: 8758768
+MD5sum: fe916a295557c81330f02075329412b3
+SHA1: f2a8cf742a578f8f08386edb48c10b8c179ce466
+SHA256: 2bbcc80bc1557378875ff9fe355d0db2688f23e5fbb7641683e0d59a88a6f87e
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing
+    e75cd16
+
+Package: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 57560
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), python-crypto, intel-mkl-64bit
+Recommends: postgresql-client
+Suggests: postgresql, postgresql-contrib
+Filename: community/19.11/xenial/scidb-19.11_4-1_amd64.deb
+Size: 8750038
+MD5sum: dcce87facad9b76ab3c1566208b17cbf
+SHA1: 4703726cc7c7d4898864f9bb91ca45cf71ea1386
+SHA256: 2c37acd4bd16f1583e65b5b7577f986e99a671305a1288cb6d1802af15ede1f9
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing
+    9086943
+
+Package: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 57584
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), python-crypto, intel-mkl-64bit
+Recommends: postgresql-client
+Suggests: postgresql, postgresql-contrib
+Filename: community/19.11/xenial/scidb-19.11_5-1_amd64.deb
+Size: 8754802
+MD5sum: ad2b26fa65f2c730142e7cc0fcc89756
+SHA1: b5a827d410c4cd6e99769e209856389454d0c872
+SHA256: 29a952f2d322e8f4575462bd2db61d7fb25ef6d47639983733ee2ee306e49bca
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing
+    f8334b6
+
+Package: scidb-19.11-all
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11 (= 0-1), scidb-19.11-client (= 0-1), scidb-19.11-utils (= 0-1), scidb-19.11-plugins (= 0-1), scidb-19.11-client-python (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-all_0-1_amd64.deb
+Size: 714
+MD5sum: eda32808d0e811d761ca5a6ce42d7f53
+SHA1: a30aedc8339eb517ec4bb3682d9da9c4bd9fad6d
+SHA256: 3b34a0cacb7dc9c75fd13b956322206cc9e0ffd87bf9ecb1eca547701a7e7d1f
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Install entire SciDB
+    87e7d51
+
+Package: scidb-19.11-all
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11 (= 3-1), scidb-19.11-client (= 3-1), scidb-19.11-utils (= 3-1), scidb-19.11-plugins (= 3-1), scidb-19.11-client-python (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-all_3-1_amd64.deb
+Size: 714
+MD5sum: a1d82c3cbd3b2e2dba802b49451bce0f
+SHA1: a7ef0ec648b5f2fb96008059de79ad2cede26f8c
+SHA256: 63ba8d38b4741b70246c9b4696e2bc1f112b7b3da053ec3cc4be19299ab0bdff
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Install entire SciDB
+    e75cd16
+
+Package: scidb-19.11-all
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11 (= 4-1), scidb-19.11-client (= 4-1), scidb-19.11-utils (= 4-1), scidb-19.11-plugins (= 4-1), scidb-19.11-client-python (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-all_4-1_amd64.deb
+Size: 716
+MD5sum: c9a6ecef69acbb8146e9e0263e4183c7
+SHA1: 8fcd7b1c1a4ac17b382f3018def251bf11985641
+SHA256: e6f659eb1113db7b72694af352baa00f1a599c354a71afd9bd11506073252462
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Install entire SciDB
+    9086943
+
+Package: scidb-19.11-all
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11 (= 5-1), scidb-19.11-client (= 5-1), scidb-19.11-utils (= 5-1), scidb-19.11-plugins (= 5-1), scidb-19.11-client-python (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-all_5-1_amd64.deb
+Size: 722
+MD5sum: 22f4c59290ade77f787bb9266c6b8723
+SHA1: d2e01c0561bcbf71e356cd62a3139e27e5e4bd6c
+SHA256: 2ed21760429d33b74b74ee25e2bef642b9f1b1e29c8e82d4eb5b54aeadc81155
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Install entire SciDB
+    f8334b6
+
+Package: scidb-19.11-ce
+Source: scidb-19.11-ce
+Version: 0
+Architecture: all
+Maintainer: Jason Kinchen <jkinchen@paradigm4.com>
+Depends: postgresql-client-9.3, postgresql-9.3, postgresql-contrib-9.3, scidb-19.11-all
+Filename: community/19.11/xenial/scidb-19.11-ce-0.deb
+Size: 4194
+MD5sum: c48b403ca905be2665a8aa6dbfe3ebc5
+SHA1: f388eb42bed6bb89073a603c7db0244e5abb4303
+SHA256: 92e0340666c3b473b1ce4f3826398c50bcd9f0f3e53ef7e8c13539507db0cd75
+Description: SciDB CE installation
+ SciDB Community Edition package to be used by install-scidb-ce.sh script.
+
+Package: scidb-19.11-client
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3985
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libprotobuf9v5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Filename: community/19.11/xenial/scidb-19.11-client_0-1_amd64.deb
+Size: 891166
+MD5sum: f822fd4e98e14aa101e051285f944278
+SHA1: 5b3a5e142c17fa0c46baf7b79df77ed27f1b2354
+SHA256: 2cc10fe3b23c54a9203c634c26a7ae1205950b202612de0b3079800f21c45e08
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library
+    87e7d51
+
+Package: scidb-19.11-client
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3985
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libprotobuf9v5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Filename: community/19.11/xenial/scidb-19.11-client_3-1_amd64.deb
+Size: 890884
+MD5sum: 6465c3f1e196f5806442293d44ca8f86
+SHA1: fd52660fdf65c8fd735c0f7da9de4ca237d60208
+SHA256: 0330f16a9fd839702f2870c3715e1ec53114bcd049e68c632b7fdfe42a1afdf7
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library
+    e75cd16
+
+Package: scidb-19.11-client
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3985
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libprotobuf9v5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Filename: community/19.11/xenial/scidb-19.11-client_4-1_amd64.deb
+Size: 891580
+MD5sum: 81b1bef8359045bea560142e2535c140
+SHA1: 55699357f1f58867892d2a71ea3467329aa3cab9
+SHA256: 1999b39b33757362772e1932cc01eead548663e36e99f7ac22c2c5bc886a7707
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library
+    9086943
+
+Package: scidb-19.11-client
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3985
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-system1.58.0, libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libprotobuf9v5, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Filename: community/19.11/xenial/scidb-19.11-client_5-1_amd64.deb
+Size: 890906
+MD5sum: ffe180390d2ca2d4458f8e2b7307148a
+SHA1: ca6e8c6fd37c78caba45be2896f6c103aec7dfec
+SHA256: 38d819c2be483458cef4952949d76f7fa09df6c6ccc71cec77f144ad993ede9b
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library
+    f8334b6
+
+Package: scidb-19.11-client-dbg
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 68102
+Depends: scidb-19.11-client (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-client-dbg_0-1_amd64.deb
+Size: 10866338
+MD5sum: f7ba7db42258943fbdee989509101f19
+SHA1: 26bde574989bb3a3d64ac40d3b7abc46a9c95725
+SHA256: 3098bf05aa24ccd02da2e9167b6f9dc8d6556827d08ce8d6723765289681346a
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library (debug symbols)
+    87e7d51
+
+Package: scidb-19.11-client-dbg
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 68242
+Depends: scidb-19.11-client (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-client-dbg_3-1_amd64.deb
+Size: 10904690
+MD5sum: 49693fc0733403fea7372990c95e7de3
+SHA1: 124cd9e39cafc29136e8b11647cda57f748b1694
+SHA256: 887a36e5430405b5aa8f9c0c0275280ef31139926b8a88cb00eb19a96902369e
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library (debug symbols)
+    e75cd16
+
+Package: scidb-19.11-client-dbg
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 68242
+Depends: scidb-19.11-client (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-client-dbg_4-1_amd64.deb
+Size: 10902920
+MD5sum: a706e5133661cdb74418be8c156f5a30
+SHA1: 7ffe5139517e4603dafc94347df3cac7382af812
+SHA256: 5b1e3bbadb80f9bb6c80706a6a22d809159d9c66b65da61599ad743104e95d53
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library (debug symbols)
+    9086943
+
+Package: scidb-19.11-client-dbg
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 68243
+Depends: scidb-19.11-client (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-client-dbg_5-1_amd64.deb
+Size: 10902878
+MD5sum: 2c0494b12a33fecb78f6e837c767d885
+SHA1: ac207bc1a55127e92a5e3f3c8e0277907ff44bd8
+SHA256: 286a8858a98c8cc42fe02ba54e40c51523f872244509c7d531c67bd8bdca361f
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library (debug symbols)
+    f8334b6
+
+Package: scidb-19.11-client-python
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: python, scidb-19.11-client (>= 0~)
+Filename: community/19.11/xenial/scidb-19.11-client-python_0-1_amd64.deb
+Size: 708
+MD5sum: 2a7e40b486cea1065900ac17f6d23f5a
+SHA1: 3e649c8f8f401da7443681ab28791d87b5ad35ec
+SHA256: f7dc8a5f3e44902d9c954779af664a34c419d8522ded12ae08ce6033b4b2c361
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector
+    87e7d51
+
+Package: scidb-19.11-client-python
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: python, scidb-19.11-client (>= 3~)
+Filename: community/19.11/xenial/scidb-19.11-client-python_3-1_amd64.deb
+Size: 710
+MD5sum: 1fad1bb81f5971862c4c3c3245e49322
+SHA1: cb6504ea6ff947d44db1dc7ad878742852353f76
+SHA256: 142c7b5e7dca4294078517d63965983e411d2ea0a762f4b1bb9aae950481fa68
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector
+    e75cd16
+
+Package: scidb-19.11-client-python
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: python, scidb-19.11-client (>= 4~)
+Filename: community/19.11/xenial/scidb-19.11-client-python_4-1_amd64.deb
+Size: 710
+MD5sum: 1386ea07d65894101485ed7cf23d94f8
+SHA1: af8e1ab28e2e7ddf08537ceea584304e2fd7e287
+SHA256: 5d6acde02db2aa17a4b51594f61f86c619ee10e89f53f7746daefa9f82a2d689
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector
+    9086943
+
+Package: scidb-19.11-client-python
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: python, scidb-19.11-client (>= 5~)
+Filename: community/19.11/xenial/scidb-19.11-client-python_5-1_amd64.deb
+Size: 716
+MD5sum: 697435a3ab825ab25bde2b6dcd139a6e
+SHA1: 25d0f955d2aefbf4bf0a9ebdff7c9f7d55f586b2
+SHA256: c1c7fa7c39e08e97afef2226a7129f6f51917992e123135f3e3412c6260a9807
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector
+    f8334b6
+
+Package: scidb-19.11-client-python-dbg
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-client-python (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-client-python-dbg_0-1_amd64.deb
+Size: 716
+MD5sum: 1758fb20068a985d233b6f15abe7e4eb
+SHA1: 4589109c79a3a4d75fac00eae728cd33b575a442
+SHA256: 7812cf65e1a8e75c76eb87dce8f39787f6cead53ef9ace260aac53752aa7a37c
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector (debug symbols)
+    87e7d51
+
+Package: scidb-19.11-client-python-dbg
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-client-python (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-client-python-dbg_3-1_amd64.deb
+Size: 718
+MD5sum: 3417c1663362212efcad1168a3858894
+SHA1: 518b4f24b97a688f24fca86755ea58bc593786b6
+SHA256: e4f68756bfa200aded05b29c5c7b2368d27d920e8256248989286f672ab4112b
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector (debug symbols)
+    e75cd16
+
+Package: scidb-19.11-client-python-dbg
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-client-python (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-client-python-dbg_4-1_amd64.deb
+Size: 718
+MD5sum: 08386b65fec7ff2f473d832f9cf472f3
+SHA1: 48d294b30624e2d737be9da5602f174036390143
+SHA256: 46a39091b551b391f024f6127cad887d76f21b89f1ca2191db2407868a1b720b
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector (debug symbols)
+    9086943
+
+Package: scidb-19.11-client-python-dbg
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-client-python (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-client-python-dbg_5-1_amd64.deb
+Size: 724
+MD5sum: 0e80bb196a54d2f088d5b8e46c56f33c
+SHA1: 8495dba469330ba9fa0e4c995dbcffa587c61a97
+SHA256: ed3ed4db13ddad37cb0e6b838d2157ea7bec70515b33aee6db010cee7cda4450
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB client library python connector (debug symbols)
+    f8334b6
+
+Package: scidb-19.11-dbg
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 439606
+Depends: scidb-19.11 (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-dbg_0-1_amd64.deb
+Size: 86120110
+MD5sum: 9c0296a81faede14111bffb89313b71c
+SHA1: 0260ede170d6b4c9ef3b73510cf046a0db81e5f2
+SHA256: 4dce9acdd60ad21c08b9ea7c88460befd05f44eb2290d9f7c5cf89f95af0b89d
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing (debug symbols)
+    87e7d51
+
+Package: scidb-19.11-dbg
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 443999
+Depends: scidb-19.11 (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-dbg_3-1_amd64.deb
+Size: 87288166
+MD5sum: bd4c8a96dc98419a1b92f9c087bef530
+SHA1: 0bd716e57c1bd0181cca6a64ddfb03a44d3069d7
+SHA256: 16939c9d1de7acdeb11240200545ab7ceceaab44c604563441ff23707e14c1fa
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing (debug symbols)
+    e75cd16
+
+Package: scidb-19.11-dbg
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 443975
+Depends: scidb-19.11 (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-dbg_4-1_amd64.deb
+Size: 87279070
+MD5sum: 868021f004859dc7126bcc6bd0efdd67
+SHA1: 6371d80dc3d0a51e1e101c7a20298358b96926cb
+SHA256: 515b0f800200262f704577dbb2961790b5376e830dcde7d8d092c105b622b3b9
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing (debug symbols)
+    9086943
+
+Package: scidb-19.11-dbg
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 444874
+Depends: scidb-19.11 (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-dbg_5-1_amd64.deb
+Size: 87442910
+MD5sum: 5fc432ac1ce255807ee20e13a4a99e82
+SHA1: 1556b0192e11f33bec60c3d211784f5fe51f286c
+SHA256: 6bd144174a99ab98096147a373373160f83314e3122d00809af44f847bbe00da
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB - database for extra large data processing (debug symbols)
+    f8334b6
+
+Package: scidb-19.11-dbginfo
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-dbg (= 0-1), scidb-19.11-plugins-dbg (= 0-1), gdb
+Filename: community/19.11/xenial/scidb-19.11-dbginfo_0-1_amd64.deb
+Size: 706
+MD5sum: a3e32cf32c777fbb200d5971ea89fc4c
+SHA1: 593830b23df2c0a096e572b7ffe57ddabcbb8664
+SHA256: e5f5e250df2833374a56fc0282a1eaf345a45a7bd120a8c72cd516384864ddf5
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Installs debug symbols and gdb
+    87e7d51
+
+Package: scidb-19.11-dbginfo
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-dbg (= 3-1), scidb-19.11-plugins-dbg (= 3-1), gdb
+Filename: community/19.11/xenial/scidb-19.11-dbginfo_3-1_amd64.deb
+Size: 706
+MD5sum: 25d07fe50c34b179808acb73b24bc381
+SHA1: c9c4ecf07589ca66fa2a54d96d5b3047ca712dbd
+SHA256: 5eb22f8c0b66ebc515492d8a703aba05a9b4360f699beabb54af9cfa2a0932bb
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Installs debug symbols and gdb
+    e75cd16
+
+Package: scidb-19.11-dbginfo
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-dbg (= 4-1), scidb-19.11-plugins-dbg (= 4-1), gdb
+Filename: community/19.11/xenial/scidb-19.11-dbginfo_4-1_amd64.deb
+Size: 708
+MD5sum: 05015131b806fe1b39df45592a4ab99c
+SHA1: d889edc39dfda23b692748b986e97373bd83c6d0
+SHA256: 48389ff8e1fda77f343712c919369d57980abf2e222f60f096a970a4b2349efb
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Installs debug symbols and gdb
+    9086943
+
+Package: scidb-19.11-dbginfo
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 2
+Depends: scidb-19.11-dbg (= 5-1), scidb-19.11-plugins-dbg (= 5-1), gdb
+Filename: community/19.11/xenial/scidb-19.11-dbginfo_5-1_amd64.deb
+Size: 712
+MD5sum: bcd93231bd92e0c32477b3afe9c57863
+SHA1: 16b4810dbb9d5452cd8dac9718dd9fa7f2425c2d
+SHA256: 864aa3f3b6747aae4ffd4ac4aab6a2adfb61e2fee64f9e06809feccd25f65719
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: Installs debug symbols and gdb
+    f8334b6
+
+Package: scidb-19.11-dev
+Source: scidb-19.11
+Version: 0-1
+Architecture: all
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 1983
+Depends: scidb-19.11-client (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-dev_0-1_all.deb
+Size: 326790
+MD5sum: c8464ed1a412ecf7a384ff31d63c31b8
+SHA1: a7378f64d01385340c0107edebc2e75364dc6a00
+SHA256: 777867c126e801318e448a4d0f4d94b3fddba744b4435de50f9776fbc76497de
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB headers
+    87e7d51
+
+Package: scidb-19.11-dev
+Source: scidb-19.11
+Version: 3-1
+Architecture: all
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 1992
+Depends: scidb-19.11-client (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-dev_3-1_all.deb
+Size: 328804
+MD5sum: f0346b4473f0b571af9833949160ab6e
+SHA1: 005df17606ab0b363c13d7b34c63bd7a4fa92f54
+SHA256: 5dd1d573f2b1324e469fda5b0969dc47907ade5ad63abfb0e7b44ef5eb2565a2
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB headers
+    e75cd16
+
+Package: scidb-19.11-dev
+Source: scidb-19.11
+Version: 4-1
+Architecture: all
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 1992
+Depends: scidb-19.11-client (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-dev_4-1_all.deb
+Size: 328762
+MD5sum: 485e83bcc563eb1d651ba53340ec3bec
+SHA1: b825ebe5b6ea77f389274f7712a169dbaf2e8952
+SHA256: 77906c23ae5043b9d2f0c30e82cd85480bf595d762b51e769c5465381279f71a
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB headers
+    9086943
+
+Package: scidb-19.11-dev
+Source: scidb-19.11
+Version: 5-1
+Architecture: all
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 1994
+Depends: scidb-19.11-client (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-dev_5-1_all.deb
+Size: 329122
+MD5sum: 189f1ab9dd3ff51f5971da7b4da90b12
+SHA1: ed5ced616d756f79956fbfe76ee67efc9e086b2a
+SHA256: bbb55ae3b10ada6e01ac89b833d0b385c963d17df83c0485e0270bb8f2d9c2eb
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB headers
+    f8334b6
+
+Package: scidb-19.11-dev-tools
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 446306
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libboost-thread1.58.0, libbz2-1.0, libc6 (>= 2.14), libcppunit-1.13-0v5, libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), scidb-19.11-client (>= 0~), time, valgrind, lsof, bc
+Filename: community/19.11/xenial/scidb-19.11-dev-tools_0-1_amd64.deb
+Size: 88136462
+MD5sum: d9742b39156039ace2a78758beb166c5
+SHA1: 358cd34346df1fac8cb303a03da03bbe92a39edb
+SHA256: 3e37cad33b5734db7d9066dee63feb89a4c230b7b85583541b7ba31aebd19709
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities
+    87e7d51
+
+Package: scidb-19.11-dev-tools
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 450730
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libboost-thread1.58.0, libbz2-1.0, libc6 (>= 2.14), libcppunit-1.13-0v5, libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), scidb-19.11-client (>= 3~), time, valgrind, lsof, bc
+Filename: community/19.11/xenial/scidb-19.11-dev-tools_3-1_amd64.deb
+Size: 89273142
+MD5sum: 056d202946f33fe56afbd8f49794dc2f
+SHA1: c4ddd07a287a228b3e6d1816da0f8b523557682a
+SHA256: 5d8adc6cbc1e769ef94e30b6646c590537fb9197e31d51c8cebee8b9d0333042
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities
+    e75cd16
+
+Package: scidb-19.11-dev-tools
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 450706
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libboost-thread1.58.0, libbz2-1.0, libc6 (>= 2.14), libcppunit-1.13-0v5, libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), scidb-19.11-client (>= 4~), time, valgrind, lsof, bc
+Filename: community/19.11/xenial/scidb-19.11-dev-tools_4-1_amd64.deb
+Size: 89304098
+MD5sum: 5759f36fdf53fc3b425fe400576d96a4
+SHA1: 6e8aa9cba79523f6677e3f84d4903b8b210c2da0
+SHA256: 584e1232128ad27fac705f714a90e6b8260c3a8b6c9d748c4eebdc9eb101d31f
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities
+    9086943
+
+Package: scidb-19.11-dev-tools
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 451645
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-regex1.58.0, libboost-serialization1.58.0, libboost-system1.58.0, libboost-thread1.58.0, libbz2-1.0, libc6 (>= 2.14), libcppunit-1.13-0v5, libcsv3 (>= 3.0.3), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), libpq5, libpqxx-4.0 (>= 4.0), libprotobuf9v5, librocksdb5, libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4), scidb-19.11-client (>= 5~), time, valgrind, lsof, bc
+Filename: community/19.11/xenial/scidb-19.11-dev-tools_5-1_amd64.deb
+Size: 89465234
+MD5sum: f24a51ab515973bd9be078d713220562
+SHA1: 5a2aa9c8ec4e6b7dd249612892e8098677e7e58a
+SHA256: 244687044c4c9c8a1c73a5dde355dffb11bb8e53f39e61af8e00a81c1756237c
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities
+    f8334b6
+
+Package: scidb-19.11-dev-tools-dbg
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 11644
+Depends: scidb-19.11-dev-tools (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-dev-tools-dbg_0-1_amd64.deb
+Size: 2164694
+MD5sum: 185a282521be57cf7a8a0c1d1bd99f6e
+SHA1: 1351b6d947ba8dceaa9a12b2429d5664d174bd63
+SHA256: 283076d7100764396d57219088472c8e01895dcec3447e6bcdf9921ce482ccc4
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities (debug symbols)
+    87e7d51
+
+Package: scidb-19.11-dev-tools-dbg
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 11644
+Depends: scidb-19.11-dev-tools (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-dev-tools-dbg_3-1_amd64.deb
+Size: 2163466
+MD5sum: a92e5d8e920c4d9f793075101afd2d76
+SHA1: 222c406a679d37b1908b93e274bd2e6a9a815ffb
+SHA256: ee90d43f0256dd26bd930f19acd245462be54caec2bdadcb34af42758eeee581
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities (debug symbols)
+    e75cd16
+
+Package: scidb-19.11-dev-tools-dbg
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 11644
+Depends: scidb-19.11-dev-tools (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-dev-tools-dbg_4-1_amd64.deb
+Size: 2164008
+MD5sum: 6f49094932a79213d8b6dc12577aaa59
+SHA1: 9f4e66f32bb57c79702961110056fa7d2499f685
+SHA256: 681230410daf0f1144735d188c6cfffb6eea1b706402f3e61802f7df22e6de2a
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities (debug symbols)
+    9086943
+
+Package: scidb-19.11-dev-tools-dbg
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 11644
+Depends: scidb-19.11-dev-tools (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-dev-tools-dbg_5-1_amd64.deb
+Size: 2162992
+MD5sum: 4a046cd5f214ac2d3e751ec801f8cd33
+SHA1: 468d4672599722745b7a7e41e246d13dfd930923
+SHA256: 414f49da000aec5db0a9ff05eecb581b6ec5880b196f946d2ed4b78d2d3035b8
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB developer and tester utilities (debug symbols)
+    f8334b6
+
+Package: scidb-19.11-plugins
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 4625
+Depends: libboost-system1.58.0, libc6 (>= 2.17), libgcc1 (>= 1:3.0), libgfortran3 (>= 4.6), liblog4cxx10v5 (>= 0.10.0), libopenmpi1.10, libprotobuf9v5, libscalapack-openmpi2.0, libstdc++6 (>= 5.2), scidb-19.11-client (= 0-1), openssh-client, intel-mkl-64bit
+Filename: community/19.11/xenial/scidb-19.11-plugins_0-1_amd64.deb
+Size: 969036
+MD5sum: 06cdfaac09e1b05fd4891269f0374708
+SHA1: 02610c909a8f389e84a25975a19ecf7714fc7987
+SHA256: 52f791c9045d392bd94f526c7dcc4e55c1f0b02fde825dd3311d461cbaa433f1
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins
+    87e7d51
+
+Package: scidb-19.11-plugins
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 4738
+Depends: libboost-system1.58.0, libc6 (>= 2.17), libgcc1 (>= 1:3.0), libgfortran3 (>= 4.6), liblog4cxx10v5 (>= 0.10.0), libopenmpi1.10, libprotobuf9v5, libscalapack-openmpi2.0, libstdc++6 (>= 5.2), scidb-19.11-client (= 3-1), openssh-client, intel-mkl-64bit
+Filename: community/19.11/xenial/scidb-19.11-plugins_3-1_amd64.deb
+Size: 992016
+MD5sum: 618207010f7ff6c0da0ff4e44d470561
+SHA1: cf595aba506648f2dbb1485f8e427f381d571514
+SHA256: 157f188092e582c8d42cc82c35e5a65f0a90b2c7b6718c05d32ebdcdf02a7be5
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins
+    e75cd16
+
+Package: scidb-19.11-plugins
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 4738
+Depends: libboost-system1.58.0, libc6 (>= 2.17), libgcc1 (>= 1:3.0), libgfortran3 (>= 4.6), liblog4cxx10v5 (>= 0.10.0), libopenmpi1.10, libprotobuf9v5, libscalapack-openmpi2.0, libstdc++6 (>= 5.2), scidb-19.11-client (= 4-1), openssh-client, intel-mkl-64bit
+Filename: community/19.11/xenial/scidb-19.11-plugins_4-1_amd64.deb
+Size: 991648
+MD5sum: 0d91353f18b21eb91f58d054b7749342
+SHA1: 80820a81d9f84507b45461fb13f4895b159e536f
+SHA256: 689ee837a5e5681b38ddeecbae55cc3a6d4e92c953f688eaafc0b5278856fd19
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins
+    9086943
+
+Package: scidb-19.11-plugins
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 4738
+Depends: libboost-system1.58.0, libc6 (>= 2.17), libgcc1 (>= 1:3.0), libgfortran3 (>= 4.6), liblog4cxx10v5 (>= 0.10.0), libopenmpi1.10, libprotobuf9v5, libscalapack-openmpi2.0, libstdc++6 (>= 5.2), scidb-19.11-client (= 5-1), openssh-client, intel-mkl-64bit
+Filename: community/19.11/xenial/scidb-19.11-plugins_5-1_amd64.deb
+Size: 990824
+MD5sum: 6c6665716f79160987ea91f8bc8e2187
+SHA1: 936362fb636ccdb319574cd35b0a7d442757f16f
+SHA256: 7b7f1a8363118aca1feaa88201087b68e3c56f1a3d25a5350f69d0f57e256eb8
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins
+    f8334b6
+
+Package: scidb-19.11-plugins-dbg
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 132047
+Depends: scidb-19.11-plugins (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-plugins-dbg_0-1_amd64.deb
+Size: 24303062
+MD5sum: 56663c2a7d41b095a1e63dffa757021e
+SHA1: 51092515ceca8e514d455092e8499e89f3b747b9
+SHA256: 474f3afc4c50a2470942b86f098f3da3485a5bf92c84fdc478f59d8b67bea569
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins (debug symbols)
+    87e7d51
+
+Package: scidb-19.11-plugins-dbg
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 137548
+Depends: scidb-19.11-plugins (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-plugins-dbg_3-1_amd64.deb
+Size: 25516548
+MD5sum: 92e3f6977abc98bc76d5be846ab45278
+SHA1: dd6cd96788050e002503f17f3a2a9655699b0227
+SHA256: 3aac50f83205497a6a2b5943bce2e78a8b462e01f70f44e0e99c49dbc1546f85
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins (debug symbols)
+    e75cd16
+
+Package: scidb-19.11-plugins-dbg
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 137548
+Depends: scidb-19.11-plugins (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-plugins-dbg_4-1_amd64.deb
+Size: 25531560
+MD5sum: 9991d5242a7ccf64839d25fc5e279a33
+SHA1: 4622953fda7e1b51a3b4fbb31867837a6c6d2db2
+SHA256: 70af369508c93d0a86f46d532acd16d4c394353f9b8d1bec74885344f6f44444
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins (debug symbols)
+    9086943
+
+Package: scidb-19.11-plugins-dbg
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 137549
+Depends: scidb-19.11-plugins (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-plugins-dbg_5-1_amd64.deb
+Size: 25526258
+MD5sum: aff86aa6a598f9ba851c1e1164e60ed0
+SHA1: 613d92943ae060290440f700c5205bc38a32457a
+SHA256: d40d032fe0d58b6b60028f7f81821548039056bee6d180c8845a4de1b27d6500
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB server and client plugins (debug symbols)
+    f8334b6
+
+Package: scidb-19.11-utils
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3155
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.14), libedit2 (>= 2.11-20080614), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), librocksdb5, libstdc++6 (>= 5.2), scidb-19.11-client (>= 0~), libcsv3
+Filename: community/19.11/xenial/scidb-19.11-utils_0-1_amd64.deb
+Size: 686240
+MD5sum: 6c7a8580b8c6904667c20a58879fbf91
+SHA1: 1f987801c83f713688ad57f1e25a3f4b7432e3bf
+SHA256: 991e3b5e68832de19dde4c551376063948708fc74ae6ea928de51e5efe5f9fd4
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities
+    87e7d51
+
+Package: scidb-19.11-utils
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3155
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.14), libedit2 (>= 2.11-20080614), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), librocksdb5, libstdc++6 (>= 5.2), scidb-19.11-client (>= 3~), libcsv3
+Filename: community/19.11/xenial/scidb-19.11-utils_3-1_amd64.deb
+Size: 685676
+MD5sum: 157345fc293c089aaa2ab523863eb684
+SHA1: 042c8daa4b84d87121dfe7e81a58d59babb6b2a3
+SHA256: 4ddcba4d24badbf61cddba861b7ae70f7b03bce7e3161ca5bea19dea1706a2c9
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities
+    e75cd16
+
+Package: scidb-19.11-utils
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3155
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.14), libedit2 (>= 2.11-20080614), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), librocksdb5, libstdc++6 (>= 5.2), scidb-19.11-client (>= 4~), libcsv3
+Filename: community/19.11/xenial/scidb-19.11-utils_4-1_amd64.deb
+Size: 686702
+MD5sum: 0d63f3e4e6d45e874028729e586eb8e7
+SHA1: 226c5c164a1d71e2bf3e1ea7153e879724bcf0b4
+SHA256: 3e6fce484e1ee1077a25d4720da0758f4cd98e10007e5558e5b133763c276f84
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities
+    9086943
+
+Package: scidb-19.11-utils
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 3155
+Depends: libboost-filesystem1.58.0, libboost-program-options1.58.0, libboost-system1.58.0, libc6 (>= 2.14), libedit2 (>= 2.11-20080614), libgcc1 (>= 1:3.0), liblog4cxx10v5 (>= 0.10.0), librocksdb5, libstdc++6 (>= 5.2), scidb-19.11-client (>= 5~), libcsv3
+Filename: community/19.11/xenial/scidb-19.11-utils_5-1_amd64.deb
+Size: 688458
+MD5sum: e3bb6b55cfebf8249a59fa1d51297d2b
+SHA1: 5b42f287ff5855423a5a1ec503d655bbed0005aa
+SHA256: 5cf2e8a19836670589c2d33702fbcd27637855bec14487196490288711737b49
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities
+    f8334b6
+
+Package: scidb-19.11-utils-dbg
+Source: scidb-19.11
+Version: 0-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 7685
+Depends: scidb-19.11-utils (= 0-1)
+Filename: community/19.11/xenial/scidb-19.11-utils-dbg_0-1_amd64.deb
+Size: 1502638
+MD5sum: c714e3776b3b49b2776aba5108c3334d
+SHA1: 8ab093e9747438d60b6ba1e5af3622b2ff83bb40
+SHA256: 37004874185888f60a60baaef4b3b54cc47b981f741d968c9e1128ea67b15bcd
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities (debug symbols)
+    87e7d51
+
+Package: scidb-19.11-utils-dbg
+Source: scidb-19.11
+Version: 3-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 7733
+Depends: scidb-19.11-utils (= 3-1)
+Filename: community/19.11/xenial/scidb-19.11-utils-dbg_3-1_amd64.deb
+Size: 1513212
+MD5sum: b79048d8263b875d7e633d674f38d68d
+SHA1: 56222440214001dda979eed1fd48a5b0b1564d47
+SHA256: a051de82f8e36fcad31a6ed173ea7aeaebbaadb0a46017aea2f3beb034bf3450
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities (debug symbols)
+    e75cd16
+
+Package: scidb-19.11-utils-dbg
+Source: scidb-19.11
+Version: 4-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 7733
+Depends: scidb-19.11-utils (= 4-1)
+Filename: community/19.11/xenial/scidb-19.11-utils-dbg_4-1_amd64.deb
+Size: 1514772
+MD5sum: 0dc9aa5c3e1a6aa3194bfdd09d4e3d8d
+SHA1: b78e8ee960fc86a493f587589e0f2ffa7bccb9ac
+SHA256: d4af8e0f20db93d3eb40e607cd9b00071d1496cd4c6c17544b5b422508b66647
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities (debug symbols)
+    9086943
+
+Package: scidb-19.11-utils-dbg
+Source: scidb-19.11
+Version: 5-1
+Architecture: amd64
+Maintainer: SciDB support list <support@lists.scidb.org>
+Installed-Size: 7733
+Depends: scidb-19.11-utils (= 5-1)
+Filename: community/19.11/xenial/scidb-19.11-utils-dbg_5-1_amd64.deb
+Size: 1513956
+MD5sum: bb1f53a71ac6ccc455198952da2200b1
+SHA1: a60490b37b213cb4602b9de3bd55e28def383a6b
+SHA256: 8ea14d33986e80f275500b4fe1f4305a88bace23a4783fedde25968efb0f8427
+Section: database
+Priority: extra
+Homepage: http://scidb.org
+Description: SciDB querying tool and other utilities (debug symbols)
+    f8334b6
+

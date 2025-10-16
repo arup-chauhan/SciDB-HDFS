@@ -1,0 +1,40 @@
+# macOS
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+
+# IDEs
+**/.idea/
+**/.vscode/
+**/*.iml
+
+# System / temp
+**/Thumbs.db
+**/*.log
+**/*.tmp
+**/*.swp
+**/*.bak
+
+# Build artifacts
+**/build/
+**/cmake-build*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/Makefile
+**/*.o
+**/*.so
+**/*.a
+**/*.out
+
+# Python (if used)
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Archives (optional)
+
+
+# Git LFS exceptions (keep these tracked)
+!**/*.deb
+!**/*.tar.gz

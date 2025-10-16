@@ -25,7 +25,9 @@ add_subdirectory("system")
 add_subdirectory("rbac")
 add_subdirectory("mkl")
 add_subdirectory("monitor")
-add_subdirectory("mpi")
+if(BUILD_MPI)
+endif()
+
 add_subdirectory("dense_linear_algebra")
 add_subdirectory("linear_algebra")
 # add_subdirectory("jdbc") # see SDB-6665: Move jdbc to github
@@ -41,7 +43,7 @@ if (NOT WITHOUT_SERVER)
     scidb_add_executable(scidb
                    network/entry.cpp network/GlobalNew.cpp dense_linear_algebra/blas/initMathLibs.cpp
                    $<TARGET_OBJECTS:array_lib>
-                   $<TARGET_OBJECTS:mpi>)
+                   )
 
     target_link_libraries(scidb
       PUBLIC network_lib

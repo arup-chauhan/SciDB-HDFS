@@ -255,27 +255,6 @@ set(CMAKE_EXE_LINKER_FLAGS "-Wl,--enable-new-dtags")
 #message(STATUS " ------- MPI_FLAVOR = ${MPI_FLAVOR} 
 #---")
 
-# ---- Disable MPI completely ----
-message(STATUS "MPI support disabled for this build (no MPI/ScaLAPACK)")
-
-# Do not create or reference any MPI target
-set(MPI_CXX_FOUND FALSE)
-set(MPI_FOUND FALSE)
-set(ENABLE_MPI OFF)
-set(BUILD_MPI OFF)
-set(DISABLE_MPI ON)
-
-# Provide empty variables so later components linking against MPI won't fail
-set(MPI_LIBRARIES "")
-set(MPI_CXX_LIBRARIES "")
-set(MPI_INCLUDE_PATH "")
-set(MPI_CXX_INCLUDE_PATH "")
-
-# Create a dummy imported target so dependencies resolve cleanly without sources
-add_library(mpi INTERFACE)
-add_library(MPI::MPI_CXX ALIAS mpi)
-
-
 find_package(LibRT REQUIRED)
 # BOOST CONFIG
 set(BOOST_ROOT /opt/scidb/${SCIDB_VERSION_MAJOR}.${SCIDB_VERSION_MINOR}/3rdparty/boost)

@@ -1,6 +1,7 @@
 # **SciDB with HDFS Integration**
 
-A scalable extension to **SciDB 19.11**, enabling **direct read/write operations on Hadoop Distributed File System (HDFS)** — bridging array databases with distributed storage systems.
+Extension to **SciDB 19.11**, enabling **direct read/write operations on Hadoop Distributed File System (HDFS)**, bridging array databases with distributed storage systems.
+
 
 ---
 

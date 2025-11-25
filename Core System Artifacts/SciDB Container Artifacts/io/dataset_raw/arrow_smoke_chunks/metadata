@@ -1,0 +1,7 @@
+attribute	ALL
+compression	lz4
+format	arrow
+index_split	100000
+namespace	public
+schema	<v:double> [i=0:4:0:5]
+version	1

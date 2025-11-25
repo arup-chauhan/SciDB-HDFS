@@ -1,0 +1,32 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Codename: community/19.11/xenial
+Date: Fri, 08 May 2020 11:52:07 +0000
+MD5Sum:
+ de1e90c1be040b07a8dc8b1ddb854455            54920 Packages
+ 2a6b685134724fa6a89c823aee2fde2f               71 Release
+ d41d8cd98f00b204e9800998ecf8427e                0 Sources
+SHA1:
+ 7b24c5a46e2a5af2718e6b51a589066a9ae2194f            54920 Packages
+ 5caee5fde8a2cfc6122d4b5d8c70f1a51cd029bf               71 Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Sources
+SHA256:
+ b089b04d0e0814d9c137f33051e387a334eb6b38100df0a6a5498bd2a0e700f2            54920 Packages
+ 7c19c20bbfc7a238634612f2d2811e8b74a1cd7a444edc745400d08e451562a6               71 Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Sources
+SHA512:
+ 983f2a2aac1088ea957ee554f11d45eba940078c54b44fef9d6227cb1584bd322ea2a2200b8c72a6023ce678a236271a8f19b65ade8e301b8236582a261f3588            54920 Packages
+ f9821b19ee0b11b1f1fdf4f204b5d67e0a8363ab87cee983e1a4cf34eb398f2c5d94297e8320abc4cb7b82b454140bf48880c3a404d96c3673c56f68e89f0efc               71 Release
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Sources
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEE+9VkYDDtvxTSYXmjH+EVZ2I6cMkFAl61R+cACgkQH+EVZ2I6
+cMm/tAf/UsnbQnD3Qkf2hPQ7c08bwOE4enN9cksFFmwiTvgpzv9VSjPKUlmtzY0V
+2BvIH7kAxI0vI0Zo45f7h5UVkQBaCC89pRmUO+9yQYjhGHytmla4qv0+BDv3+mFr
+RXBkoKuPMePIcn3imIGioxYjzLhk7Hzu4+WazEvebdENtlQgxAcQgiq9q3dXjcM3
+rrxRK44+iWzClh1f0FUFxXF6CPZmLjltRoBSLhym47ilftSJgWcQf3lWwjmL5kGi
+OohDmfR2Obq77U/pvFDMeSJlxhuAQ5jmxwM1asK3YXHAN3GenOdiW+FccKPDosac
+zs2jfoNn/V1TH5YeFHuFIU+s8sF7fg==
+=QBzh
+-----END PGP SIGNATURE-----

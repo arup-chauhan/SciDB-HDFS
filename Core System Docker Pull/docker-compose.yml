@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  scidb:
+    image: arup26/scidb19.11-shim-verified-with-aio-arrow-parquet:xenial
+    container_name: scidb-opt
+    hostname: scidb-opt
+    restart: unless-stopped
+    privileged: true
+    tty: true
+    volumes:
+      - scidata:/var/lib/scidb
+      - ./scidb-opt:/opt/scidb-opt
+    ports:
+      - "8083:8083" # shim
+      - "1239:1239" # coordinator
+      - "1234:1234" # instance 0
+    environment:
+      SCIDB_VER: "19.11"
+      SCIDB_CLUSTER_NAME: "mycluster"
+
+  ubuntu:
+    image: arup26/ubuntu-spark-java17-python3.10:xenial
+    container_name: ubuntu-opt
+    hostname: ubuntu-opt
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - scidata:/var/lib/scidb # shared volume for data exchange
+      - ./ubuntu-opt:/opt/ubuntu-opt
+    ports:
+      - "4040:4040" # Spark UI
+    environment:
+      JAVA_HOME: "/usr/lib/jvm/java-17-openjdk-amd64"
+      PYTHONUNBUFFERED: "1"
+
+volumes:
+  scidata:
